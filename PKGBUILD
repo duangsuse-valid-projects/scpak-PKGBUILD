@@ -1,4 +1,4 @@
-6# Maintainer: Duangsuse <fedora-opensuse@outlook.com>
+# Maintainer: Duangsuse <fedora-opensuse@outlook.com>
 pkgname=scpak
 pkgver=0.3.1
 pkgrel=1
@@ -19,8 +19,9 @@ build() {
 cd "${srcdir}/scpak"
 msg "finished git clone. downloading submodule..."
 git submodule update --init
-msg "finished update submodule,running cmake..."
-cmake CMakeList.txt  msg "running make..."
+msg "finished updating submodule,running cmake..."
+cmake CMakeList.txt
+msg "running make..."
 make
 if [ $? == 0 ] ;then
     msg "Done.Packing package..."
