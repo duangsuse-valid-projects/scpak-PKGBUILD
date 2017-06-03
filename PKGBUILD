@@ -1,4 +1,4 @@
-# Maintainer: Duangsuse <fedora-opensuse@outlook.com>
+6# Maintainer: Duangsuse <fedora-opensuse@outlook.com>
 pkgname=scpak
 pkgver=0.3.1
 pkgrel=1
@@ -22,7 +22,7 @@ git submodule update --init
 msg "finished update submodule,running cmake..."
 cmake CMakeList.txt  msg "running make..."
 make
-if [ $? == 0 ] then
+if [ $? == 0 ] ;then
     msg "Done.Packing package..."
 else
     msg "Looks like something went wrong with scpak's master branch. Go to https://github.com/qnnnnez/scpak/issues"
