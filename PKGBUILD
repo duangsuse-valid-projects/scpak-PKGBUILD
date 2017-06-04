@@ -23,7 +23,8 @@ msg "finished updating submodule,running cmake..."
 cmake CMakeList.txt
 msg "running make..."
 make
-if [ $? == 0 ] ;then
+if [$? == 0]
+then
     msg "Done.Packing package..."
 else
     msg "Looks like something went wrong with scpak's master branch. Go to https://github.com/qnnnnez/scpak/issues"
