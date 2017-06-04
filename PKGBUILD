@@ -20,7 +20,7 @@ cd "${srcdir}/scpak"
 msg "finished git clone. downloading submodule..."
 git submodule update --init
 msg "finished updating submodule,running cmake..."
-cmake CMakeList.txt
+cmake CMakeLists.txt
 msg "running make..."
 make
 if [$? == 0]
