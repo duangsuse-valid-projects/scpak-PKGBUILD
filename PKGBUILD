@@ -31,7 +31,7 @@ else
 fi
 }
 
-package() { 
+package() {
 cd "${srcdir}/scpak" 
 install -Dm644 bin/scpak "$pkgdir/usr/share/bin/scpak"
 }
