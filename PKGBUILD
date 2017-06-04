@@ -8,7 +8,7 @@ arch=('any')
 license=('MIT')
 depends=()
 optdepends=()
-makedepends=('git' 'cmake' 'make')
+makedepends=('git' 'cmake' 'make' 'gcc')
 conflicts=()
 replaces=()
 backup=()
@@ -26,8 +26,8 @@ make
 if [$? == 0]
 then
     msg "Done.Packing package..."
-else
-    msg "Looks like something went wrong with scpak's master branch. Go to https://github.com/qnnnnez/scpak/issues"
+#else
+#    msg "Looks like something went wrong with scpak's master branch. Go to https://github.com/qnnnnez/scpak/issues"
 fi
 }
 
